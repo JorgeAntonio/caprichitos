@@ -29,8 +29,8 @@ onMounted(() => {
     </div>
   </div>
   <div class="max-w-7xl mx-auto px-4 py-6">
-    <h1 class="text-5xl font-semibold py-4">Catalogo</h1>
-    <div id="catalogo" class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <h1 id="catalogo" class="text-5xl font-semibold py-4">Catalogo</h1>
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <ProductCard v-for="(item, index) in form.productos" :key="index" :product="item" />
     </div>
     <div id="nosotros">
