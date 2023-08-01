@@ -27,7 +27,7 @@ form.obtenerDatoId(
                 <h3 class="font-bold border-b-2 mb-4 pb-2">Descripción</h3>
                 <p class="mb-7">{{ form.producto.description }}</p>
                 <button class="btn btn-primary">
-                    Add to Cart
+                    Agregar al carrito
                 </button>
             </div>
         </div>
