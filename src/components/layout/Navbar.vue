@@ -29,7 +29,7 @@ const user = almacenAuth();
       </ul>
     </div>
     <div class="navbar-end gap-2">
-      <router-link to="/create-product" v-if="userSession" class="btn btn-primary">Dashboard</router-link>
+      <router-link to="/create" v-if="userSession" class="btn btn-primary">Dashboard</router-link>
       <button v-if="userSession" @click="user.logout" class="btn btn-primary">Salir</button>
       <router-link to="/" v-if="userSession == null" class="btn btn-primary">Contactar</router-link>
     </div>
