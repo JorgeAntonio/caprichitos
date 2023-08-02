@@ -23,17 +23,17 @@ const user = almacenAuth();
         <div class="card-body">
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Email</span>
+              <span class="label-text">Correo</span>
             </label>
-            <input type="text" placeholder="email" class="input input-bordered" v-model="email" />
+            <input type="text" placeholder="ejemplo@email.com" class="input input-bordered" v-model="email" />
           </div>
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Password</span>
+              <span class="label-text">Contraseña</span>
             </label>
-            <input type="text" placeholder="password" class="input input-bordered" v-model="password" />
+            <input type="text" placeholder="******" class="input input-bordered" v-model="password" />
             <label class="label">
-              <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+              <a href="#" class="label-text-alt link link-hover">¿Olvidaste tu contraseña?</a>
             </label>
           </div>
           <div class="form-control mt-6">
