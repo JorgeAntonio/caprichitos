@@ -24,11 +24,11 @@ const routes = [
     ],
   },
   {
-    path: "/auth",
+    path: "/create",
     component: () => import("../layouts/AuthLayout.vue"),
     children: [
       {
-        path: "/create",
+        path: "",
         name: "Create",
         component: () => import("../views/product/create.vue"),
       },
