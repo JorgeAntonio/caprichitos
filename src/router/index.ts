@@ -21,6 +21,12 @@ const routes = [
         name: "ProductDetail",
         component: () => import("../views/product/detail.vue"),
       },
+    ],
+  },
+  {
+    path: "/auth",
+    component: () => import("../layouts/AuthLayout.vue"),
+    children: [
       {
         path: "/create",
         name: "Create",
@@ -28,15 +34,10 @@ const routes = [
       },
     ],
   },
-  {
-    path: "/auth",
-    name: "Auth",
-    component: () => import("../views/SignIn.vue"),
-  },
 ];
 
 const router = createRouter({
-  // history: createWebHistory(import.meta.env.BAS E_URL),
+  // history: createWebHistory(import.meta.env.BASE_URL),
   history: createWebHistory(),
   routes: routes,
 });
