@@ -4,11 +4,10 @@ import DefaulLayout from "../layouts/DefaultLayout.vue";
 const routes = [
   {
     path: "/",
-    name: "",
     component: DefaulLayout,
     children: [
       {
-        path: "/",
+        path: "",
         name: "Home",
         component: () => import("../views/Home.vue"),
       },
