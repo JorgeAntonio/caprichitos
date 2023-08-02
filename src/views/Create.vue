@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted } from "vue";
-import BaseInput from "../../components/formulario/BaseInput.vue";
-import { almacenForm } from "../../stores/form";
+import BaseInput from "../components/formulario/BaseInput.vue";
+import { almacenForm } from "../stores/form";
 
 // componentes
 import Auth from "@/components/auth/Auth.vue";

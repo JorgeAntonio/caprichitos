@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { toCurrency } from '../../shared/utils';
-import { almacenForm } from '../../stores/form'
+import { toCurrency } from '../shared/utils';
+import { almacenForm } from '../stores/form'
 import { useRoute } from 'vue-router';
-import FooterBar from '../../components/layout/FooterBar.vue'
+import FooterBar from '../components/layout/FooterBar.vue'
 
 
 const route = useRoute();

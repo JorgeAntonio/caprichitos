@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { almacenForm } from "../../stores/form";
+import { almacenForm } from "../stores/form";
 import { onMounted } from "vue";
 
 const form = almacenForm();
