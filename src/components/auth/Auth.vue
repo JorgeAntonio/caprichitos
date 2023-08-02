@@ -38,12 +38,12 @@ const user = almacenAuth();
           </div>
           <div class="form-control mt-6">
             <button @click="user.login({ email, password })" class="btn btn-primary">
-              Login
+              Iniciar sesión
             </button>
           </div>
           <div class="form-control mt-2">
             <button @click="user.singup({ email, password })" class="btn btn-secondary">
-              Signup
+              Registrate
             </button>
           </div>
         </div>
