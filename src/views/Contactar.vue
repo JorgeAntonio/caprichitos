@@ -8,7 +8,7 @@
             <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJha2VyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
                 class="max-w-sm rounded-lg shadow-xl" />
             <div>
-                <h1 class="text-5xl font-semibold">Nosotros</h1>
+                <h1 class="text-5xl font-semibold">Contactanos</h1>
                 <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                     exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cum laborum magnam eius neque

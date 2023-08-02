@@ -4,9 +4,7 @@ import Navbar from './components/layout/Navbar.vue';
 
 <template>
   <Navbar />
-  <main class="h-screen">
-    <RouterView />
-  </main>
+  <router-view></router-view>
 </template>
 
 <style scoped></style>

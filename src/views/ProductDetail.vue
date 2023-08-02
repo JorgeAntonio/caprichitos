@@ -16,7 +16,7 @@ form.obtenerDatoId(
 </script>
 
 <template>
-    <div class="h-screen">
+    <div class="h-screen max-w-7xl mx-auto p-4">
         <div class="card">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div class="p-7">
