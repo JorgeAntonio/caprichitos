@@ -9,15 +9,13 @@ import MainSection from '@/components/layout/MainSection.vue';
                 <img src="https://plus.unsplash.com/premium_photo-1661601616684-8b8a2939ce1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                     class="rounded-md" alt="">
                 <div class="flex flex-col gap-6">
-                    <h1 class="text-4xl font-semibold">Sobre Caprichos</h1>
-                    <p class="text-2xl font-semibold leading-loose">La inspiración que enama de nuestras dos pasiones: amar
-                        bonito
-                        y
-                        arte. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis labore adipisci.
-                        Ut
-                        quaerat asperiores nulla, corrupti sapiente ducimus iusto. Lorem ipsum dolor, sit amet
-                        consectetur
-                        adipisicing elit. Velit, nulla!
+                    <h1 class="text-4xl font-semibold">Acerca de Caprichos</h1>
+                    <p class="text-xl font-semibold leading-snug">En Caprichos, creemos en transformar momentos simples en
+                        recuerdos dulces e inolvidables. Nuestra pasión por la repostería se refleja en cada keke y
+                        pastelito que horneamos. Con ingredientes de la más alta calidad y un toque de creatividad, creamos
+                        delicias que despiertan sonrisas y alegran corazones. Desde nuestros clásicos atemporales hasta las
+                        creaciones más audaces, cada producto es una expresión de amor por el arte culinario. Únete a
+                        nosotros en este viaje de sabores y texturas, y permítenos endulzar tu vida, un bocado a la vez.
                     </p>
                 </div>
             </div>
