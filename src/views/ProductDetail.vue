@@ -18,7 +18,7 @@ form.obtenerDatoId(
 
 <template>
     <Navbar />
-    <div class="h-screen max-w-7xl mx-auto p-4">
+    <div class="max-w-7xl mx-auto p-4">
         <div class="card">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center">
                 <div class="p-7">
