@@ -3,6 +3,7 @@ import { toCurrency } from '../shared/utils';
 import { almacenForm } from '../stores/form'
 import { useRoute } from 'vue-router';
 import FooterBar from '../components/layout/FooterBar.vue'
+import Navbar from '@/components/layout/Navbar.vue';
 
 
 const route = useRoute();
@@ -16,6 +17,7 @@ form.obtenerDatoId(
 </script>
 
 <template>
+    <Navbar />
     <div class="h-screen max-w-7xl mx-auto p-4">
         <div class="card">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
