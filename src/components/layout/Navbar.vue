@@ -5,7 +5,7 @@ const user = almacenAuth();
 </script>
 
 <template>
-  <div class="navbar bg-secondary">
+  <div class="navbar bg-secondary-focus">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
