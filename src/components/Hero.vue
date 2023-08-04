@@ -1,12 +1,10 @@
 <script lang="ts" setup>
 import Navbar from './layout/Navbar.vue';
-// import MainSection from './layout/MainSection.vue';
 </script>
 
 <template>
     <div class="bg-secondary-focus">
         <Navbar></Navbar>
-        <!-- <MainSection> -->
         <div class=" max-w-7xl m-auto py-8 md:py-20 px-4">
             <div class="flex flex-wrap-reverse justify-around items-center md:grid md:grid-cols-2 gap-4">
                 <div class="flex justify-center items-center m-auto">
@@ -30,6 +28,5 @@ import Navbar from './layout/Navbar.vue';
                 </div>
             </div>
         </div>
-        <!-- </MainSection> -->
     </div>
 </template>
