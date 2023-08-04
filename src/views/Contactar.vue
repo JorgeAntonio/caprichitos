@@ -1,24 +1,45 @@
 <script lang="ts" setup>
-
+import MainSection from "../components/layout/MainSection.vue";
 </script>
 
 <template>
-    <div class="max-w-7xl mx-auto h-screen px-4 py-8">
-        <div class="grid grid-cols-1 md:grid-cols-2">
-            <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJha2VyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                class="max-w-sm rounded-lg shadow-xl" />
-            <div>
-                <h1 class="text-5xl font-semibold">Contactanos</h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cum laborum magnam eius neque
-                    debitis deserunt! Excepturi necessitatibus sed repellendus, delectus qui expedita molestias nostrum
-                    nihil, quisquam provident amet veritatis error nisi id repudiandae explicabo! Odio eveniet rerum,
-                    nulla doloribus deserunt tempora neque magnam. Totam eius sunt voluptatem soluta provident?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe quaerat asperiores commodi sunt
-                    molestias deleniti eaque laboriosam suscipit necessitatibus.
-                </p>
+    <MainSection>
+        <div class="card border py-16 bg-secondary">
+            <div class="card-body grid grid-cols-1 md:grid-cols-2 items-center">
+                <div class="hidden md:flex justify-center items-center">
+                    <img src="../assets/wall3-removebg.png" class="" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <h1 class="text-2xl font-semibold text-center max-w-sm">Obten 20 % de descuento en tu primera orden
+                    </h1>
+                    <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Nombre</span>
+                                </label>
+                                <input type="text" placeholder="" class="input input-bordered" />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Telefono</span>
+                                </label>
+                                <input type="text" placeholder="" class="input input-bordered" />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Email</span>
+                                </label>
+                                <input type="text" placeholder="" class="input input-bordered" />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
+    </MainSection>
 </template>

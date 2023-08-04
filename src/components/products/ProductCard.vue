@@ -9,9 +9,11 @@ defineProps<{
 </script>
 
 <template>
-  <div class="card bordered">
+  <div class="card">
     <figure class="px-8 pt-10">
-      <img :src="product.image" alt="Card Image" class="object-contain w-full h-64" />
+      <router-link class="link link-hover" :to="`/product/${product.id}`">
+        <img :src="product.image" alt="Card Image" class="object-contain w-full h-64" />
+      </router-link>
     </figure>
     <div class="card-body">
       <h2 class="card-title">
@@ -19,13 +21,10 @@ defineProps<{
           product.title
         }}</router-link>
       </h2>
-      <p>{{ toCurrency(product.price) }}</p>
-      <div class="justify-end card-actions">
-        <!-- <button class="btn btn-primary" @click="cart.add(product.id)">
-          Detalles
-        </button> -->
-        <router-link class="btn btn-primary" :to="`/product/${product.id}`">
-          Detalles
+      <div class="flex justify-center items-center">
+        <p class="text-lg">{{ toCurrency(product.price) }}</p>
+        <router-link class="btn btn-primary btn-sm" :to="`/product/${product.id}`">
+          order
         </router-link>
       </div>
     </div>

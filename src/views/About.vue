@@ -1,24 +1,26 @@
 <script lang="ts" setup>
-
+import MainSection from '@/components/layout/MainSection.vue';
 </script>
 
 <template>
-    <div class="max-w-7xl mx-auto h-screen px-4 py-8">
-        <div class="grid grid-cols-1 md:grid-cols-2">
-            <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJha2VyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                class="max-w-sm rounded-lg shadow-xl" />
-            <div>
-                <h1 class="text-5xl font-semibold">Nosotros</h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cum laborum magnam eius neque
-                    debitis deserunt! Excepturi necessitatibus sed repellendus, delectus qui expedita molestias nostrum
-                    nihil, quisquam provident amet veritatis error nisi id repudiandae explicabo! Odio eveniet rerum,
-                    nulla doloribus deserunt tempora neque magnam. Totam eius sunt voluptatem soluta provident?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe quaerat asperiores commodi sunt
-                    molestias deleniti eaque laboriosam suscipit necessitatibus.
-                </p>
+    <MainSection>
+        <div class="bg-base-200 card border py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center card-body gap-6">
+                <img src="https://plus.unsplash.com/premium_photo-1661601616684-8b8a2939ce1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    class="rounded-md" alt="">
+                <div class="flex flex-col gap-6">
+                    <h1 class="text-4xl font-semibold">Sobre Caprichos</h1>
+                    <p class="text-2xl font-semibold leading-loose">La inspiración que enama de nuestras dos pasiones: amar
+                        bonito
+                        y
+                        arte. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis labore adipisci.
+                        Ut
+                        quaerat asperiores nulla, corrupti sapiente ducimus iusto. Lorem ipsum dolor, sit amet
+                        consectetur
+                        adipisicing elit. Velit, nulla!
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </MainSection>
 </template>

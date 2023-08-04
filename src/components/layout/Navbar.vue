@@ -5,7 +5,7 @@ const user = almacenAuth();
 </script>
 
 <template>
-  <div class="navbar bg-base-100">
+  <div class="navbar bg-secondary">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -16,22 +16,17 @@ const user = almacenAuth();
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
           <li><router-link to="/catalog">Catalogo</router-link></li>
           <li><router-link to="/about">Nosotros</router-link></li>
-          <li><router-link to="/location">Ubicación</router-link></li>
         </ul>
       </div>
-      <router-link to="/" class="btn btn-ghost normal-case text-xl">Caprichitos</router-link>
-    </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><router-link to="/catalog">Catalogo</router-link></li>
-        <li><router-link to="/">Nosotros</router-link></li>
-        <li><router-link to="/">Ubicación</router-link></li>
-      </ul>
+      <router-link to="/" class="text-xl font-semibold">Caprichitos</router-link>
     </div>
     <div class="navbar-end gap-2">
-      <router-link to="/create" v-if="userSession" class="btn btn-primary">Dashboard</router-link>
-      <button v-if="userSession" @click="user.logout" class="btn btn-primary">Salir</button>
-      <router-link to="/" v-if="userSession == null" class="btn btn-primary">Contactar</router-link>
+      <ul class="hidden md:flex gap-3">
+        <li><router-link to="/catalog" class="hover:underline rounded-md font-semibold px-1">Catalogo</router-link></li>
+        <li><router-link to="/" class="hover:underline rounded-md font-semibold px-1">Nosotros</router-link></li>
+      </ul>
+      <router-link to="/create" v-if="userSession" class="hidden md:btn md:btn-neutral md:btn-sm">Dashboard</router-link>
+      <button v-if="userSession" @click="user.logout" class="hidden md:btn md:btn-neutral md:btn-sm">Salir</button>
     </div>
   </div>
 </template>
