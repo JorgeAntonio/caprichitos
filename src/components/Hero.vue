@@ -20,7 +20,7 @@ import MainSection from './layout/MainSection.vue';
                         </p>
                         <div class="flex gap-3">
                             <router-link to="/catalog" class="btn btn-neutral">Ordenar</router-link>
-                            <a href="" class="btn btn-primary">Contactar</a>
+                            <a href="" class="btn btn-neutral">Contactar</a>
                         </div>
                     </div>
                 </div>
