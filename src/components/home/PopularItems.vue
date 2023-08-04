@@ -22,7 +22,7 @@ onMounted(() => {
             <div class="carousel-item gap-6">
                 <div v-for="item in form.productos" :key="item.id" class="flex flex-col justify-center items-center">
                     <img :src="item.image" class="h-1/2" :alt="item.title" />
-                    <h3 class="text-center font-semibold mt-2">{{ item.title }}</h3>
+                    <h3 class="text-center text-xl font-semibold mt-2">{{ item.title }}</h3>
                 </div>
             </div>
         </div>
