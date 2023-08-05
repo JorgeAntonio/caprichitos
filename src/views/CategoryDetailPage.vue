@@ -1,22 +1,27 @@
 <script lang="ts" setup>
-import { onMounted } from "vue";
 
 import ProductCard from "../components/products/ProductCard.vue";
 import { almacenForm } from "@/stores/form";
-import MainSection from "./layout/MainSection.vue";
+import MainSection from "../components/layout/MainSection.vue";
+import { useRoute } from "vue-router";
+import Navbar from "@/components/layout/Navbar.vue";
+import FooterBar from "@/components/layout/FooterBar.vue";
+
+const route = useRoute();
 
 const form = almacenForm();
+const id = route.params.id as string;
 
-onMounted(() => {
-    form.obtenerDatos();
-});
+form.obtenerDatosPorCategoria(id);
+
 </script>
 
 <template>
+    <Navbar />
     <MainSection>
         <div class="flex justify-between">
-            <h1 class="text-4xl font-semibold">Productos</h1>
-            <button class="btn btn-outline btn-neutral btn-sm">ver todo</button>
+            <h1 class="text-4xl font-semibold">{{ form.categorias[id] }}</h1>
+            <router-link to="/products" class="btn btn-outline btn-neutral btn-sm">ver todo</router-link>
         </div>
         <div class="divider pb-8"></div>
         <div class="flex justify-between">
@@ -25,4 +30,5 @@ onMounted(() => {
             </div>
         </div>
     </MainSection>
+    <FooterBar />
 </template>

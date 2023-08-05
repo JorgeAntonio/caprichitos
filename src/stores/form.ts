@@ -9,6 +9,13 @@ export interface Product {
   image: string;
 }
 
+export interface Category {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+}
+
 interface TiposEstado {
   productos: Product[];
   size: string;
@@ -21,6 +28,7 @@ interface TiposEstado {
   editar: boolean;
   urlDescarga: any;
   producto: Product;
+  categorias: any;
 }
 
 export const almacenForm = defineStore({
@@ -42,6 +50,10 @@ export const almacenForm = defineStore({
       price: 0,
       description: "",
       image: "",
+    },
+    categorias: {
+      "1": "Tortas",
+      "2": "Personalizado",
     },
   }),
   actions: {
@@ -87,6 +99,29 @@ export const almacenForm = defineStore({
         console.log("Producto ", this.producto);
       } catch (err) {
         console.error("Error retrieving data from db", err);
+      }
+    },
+    async obtenerDatosPorCategoria(id: string) {
+      try {
+        const { data: elementos, error } = await supabase
+          .from("elementos")
+          .select("*")
+          .eq("category", id)
+          .order("id");
+        if (error) {
+          console.log("error", error);
+          return;
+        }
+        // Cuando no devuelve datos
+        if (elementos === null) {
+          this.productos = [];
+          return;
+        }
+        // Cuando devuelve datos
+        this.productos = elementos;
+        console.log("Productos ", this.productos);
+      } catch (error) {
+        console.error("Error retrieving data from db", error);
       }
     },
     async eliminarDato(id: string) {

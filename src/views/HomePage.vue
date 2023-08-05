@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import About from "./About.vue";
-import Catalogo from "@/components/Catalogo.vue";
-import Hero from "@/components/Hero.vue";
-import Contactar from "./Contactar.vue";
+import About from "./AboutPage.vue";
+import Hero from "@/components/home/Hero.vue";
+import Contactar from "./ContactPage.vue";
 import FooterBar from "@/components/layout/FooterBar.vue";
 import PopularItems from "@/components/home/PopularItems.vue";
-import Categories from "./Categories.vue";
+import Categories from "./CategoryPage.vue";
+import Products from "@/components/products/Products.vue";
 
 </script>
 
@@ -14,7 +14,7 @@ import Categories from "./Categories.vue";
     <Hero />
     <About />
     <Categories />
-    <Catalogo />
+    <Products />
     <PopularItems />
     <Contactar />
     <FooterBar />

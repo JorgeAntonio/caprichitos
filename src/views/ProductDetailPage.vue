@@ -4,6 +4,7 @@ import { almacenForm } from '../stores/form'
 import { useRoute } from 'vue-router';
 import FooterBar from '../components/layout/FooterBar.vue'
 import Navbar from '@/components/layout/Navbar.vue';
+import MainSection from '@/components/layout/MainSection.vue';
 
 
 const route = useRoute();
@@ -18,7 +19,7 @@ form.obtenerDatoId(
 
 <template>
     <Navbar />
-    <div class="max-w-7xl mx-auto p-4">
+    <MainSection>
         <div class="card">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center">
                 <div class="p-7">
@@ -36,6 +37,6 @@ form.obtenerDatoId(
                 </div>
             </div>
         </div>
-    </div>
+    </MainSection>
     <FooterBar />
 </template>

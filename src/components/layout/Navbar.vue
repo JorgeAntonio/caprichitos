@@ -14,8 +14,8 @@ const user = almacenAuth();
           </svg>
         </label>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          <li><router-link to="/catalog">Catalogo</router-link></li>
-          <li><router-link to="/about">Nosotros</router-link></li>
+          <li><router-link to="/products">Productos</router-link></li>
+          <li><router-link to="/">Nosotros</router-link></li>
           <li><router-link to="/">App</router-link></li>
         </ul>
       </div>
@@ -23,7 +23,7 @@ const user = almacenAuth();
     </div>
     <div class="navbar-end gap-2">
       <ul class="hidden md:flex gap-3">
-        <li><router-link to="/catalog" class="hover:underline rounded-md font-semibold px-1">Catalogo</router-link></li>
+        <li><router-link to="/products" class="hover:underline rounded-md font-semibold px-1">Productos</router-link></li>
         <li><router-link to="/" class="hover:underline rounded-md font-semibold px-1">Nosotros</router-link></li>
         <li><router-link to="/" class="hover:underline rounded-md font-semibold px-1">App</router-link></li>
       </ul>

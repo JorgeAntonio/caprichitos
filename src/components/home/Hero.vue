@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Navbar from './layout/Navbar.vue';
+import Navbar from '../layout/Navbar.vue';
 </script>
 
 <template>
@@ -16,14 +16,14 @@ import Navbar from './layout/Navbar.vue';
                         <p class="text-base md:text-xl font-semibold max-w-sm">¡Dulzura que deleita, momentos que perduran!
                         </p>
                         <div class="space-x-2">
-                            <router-link to="/catalog" class="btn btn-neutral">Ordenar</router-link>
+                            <router-link to="/products" class="btn btn-neutral">Ordenar</router-link>
                             <a href="" class="btn btn-neutral">Contactar</a>
                         </div>
                     </div>
                 </div>
                 <div class="flex justify-center items-center card">
                     <figure>
-                        <img src="../assets/wall5-removebg.png" class="h-52 md:h-full" alt="">
+                        <img src="../../assets/wall5-removebg.png" class="h-52 md:h-full" alt="">
                     </figure>
                 </div>
             </div>

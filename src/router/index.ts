@@ -6,43 +6,42 @@ const router = createRouter({
     {
       path: "/",
       name: "Home",
-      component: () => import("../views/Home.vue"),
+      component: () => import("../views/HomePage.vue"),
     },
     {
-      path: "/product",
+      path: "/products",
       name: "Product",
-      component: () => import("../views/Product.vue"),
+      component: () => import("../views/ProductPage.vue"),
     },
     {
       path: "/product/:id",
       name: "ProductDetail",
-      component: () => import("../views/ProductDetail.vue"),
+      component: () => import("../views/ProductDetailPage.vue"),
     },
-
+    // {
+    //   path: "/category",
+    //   name: "Catgory",
+    //   component: () => import("../views/CategoryPage.vue"),
+    // },
+    {
+      path: "/category/:id",
+      name: "CategoryDetail",
+      component: () => import("../views/CategoryDetailPage.vue"),
+    },
     {
       path: "/create",
       name: "Create",
-      component: () => import("../views/Create.vue"),
-    },
-    {
-      path: "/catalog",
-      name: "Catalog",
-      component: () => import("../views/Catalog.vue"),
+      component: () => import("../views/CreatePage.vue"),
     },
     {
       path: "/about",
       name: "About",
-      component: () => import("../views/Home.vue"),
+      component: () => import("../views/HomePage.vue"),
     },
     {
       path: "/contact",
       name: "Contact",
-      component: () => import("../views/Home.vue"),
-    },
-    {
-      path: "/location",
-      name: "Location",
-      component: () => import("../views/Home.vue"),
+      component: () => import("../views/HomePage.vue"),
     },
   ],
 });
