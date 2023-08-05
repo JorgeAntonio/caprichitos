@@ -23,7 +23,7 @@ import MainSection from '@/components/layout/MainSection.vue';
         </div>
     </MainSection>
     <MainSection>
-        <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-6 m-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-6 m-auto">
             <div>
                 <h1 class="text-4xl font-semibold pb-4">Misión</h1>
                 <p class="text-xl font-semibold leading-snug">Somos una empresa comprometida a ofrecer una gran variedad
