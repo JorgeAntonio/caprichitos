@@ -11,10 +11,10 @@ import PopularItems from "@/components/home/PopularItems.vue";
 <template>
   <div>
     <Hero />
+    <About />
     <Catalogo />
     <PopularItems />
     <Contactar />
-    <About />
     <FooterBar />
   </div>
 </template>

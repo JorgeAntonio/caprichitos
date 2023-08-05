@@ -19,7 +19,7 @@ const user = almacenAuth();
           <li><router-link to="/">App</router-link></li>
         </ul>
       </div>
-      <router-link to="/" class="text-2xl font-semibold">Caprichitos</router-link>
+      <router-link to="/" class="text-2xl font-semibold">Dulce Capricho</router-link>
     </div>
     <div class="navbar-end gap-2">
       <ul class="hidden md:flex gap-3">

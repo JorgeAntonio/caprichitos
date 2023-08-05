@@ -9,7 +9,7 @@ import Navbar from './layout/Navbar.vue';
             <div class="flex flex-wrap-reverse justify-around items-center md:grid md:grid-cols-2 gap-4">
                 <div class="flex justify-center items-center m-auto">
                     <div class="flex flex-col justify-between items-center text-center md:text-start md:items-start gap-6">
-                        <h1 class="text-6xl font-semibold">Caprichos</h1>
+                        <h1 class="text-6xl font-semibold">Dulce Capricho</h1>
                         <h2 class="text-xl md:text-4xl font-semibold">Endulza tu vida con los irresistibles caprichos de
                             sabor.
                         </h2>

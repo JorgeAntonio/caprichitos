@@ -4,20 +4,38 @@ import MainSection from '@/components/layout/MainSection.vue';
 
 <template>
     <MainSection>
-        <div class="bg-base-200 card border py-16">
-            <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center card-body gap-6">
+        <div class="">
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-6">
                 <img src="https://plus.unsplash.com/premium_photo-1661601616684-8b8a2939ce1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                     class="rounded-md" alt="">
                 <div class="flex flex-col gap-6">
-                    <h1 class="text-4xl font-semibold">Acerca de Caprichos</h1>
-                    <p class="text-xl font-semibold leading-snug">En Caprichos, creemos en transformar momentos simples en
-                        recuerdos dulces e inolvidables. Nuestra pasión por la repostería se refleja en cada keke y
-                        pastelito que horneamos. Con ingredientes de la más alta calidad y un toque de creatividad, creamos
-                        delicias que despiertan sonrisas y alegran corazones. Desde nuestros clásicos atemporales hasta las
-                        creaciones más audaces, cada producto es una expresión de amor por el arte culinario. Únete a
-                        nosotros en este viaje de sabores y texturas, y permítenos endulzar tu vida, un bocado a la vez.
+                    <h1 class="text-4xl font-semibold">Acerca de Dulce Capricho</h1>
+                    <p class="text-xl font-semibold leading-snug">La empresa Dulce Caprichos fue creada con la finalidad de
+                        ofrecer una gran variedad de postres de diferentes sabores para complacer los antojos en fechas
+                        especiales. Nuestros productos son elaborados a base de insumos de calidad para que nuestros
+                        clientes tengan una experiencia satisfactoria a la hora de degustar cualquier postre a su elección.
+                        La empresa está en constante innovación no solo en sus productos, si no también el ofrecer un
+                        servicio de entrega más seguro y rápido, trabajando con eficiencia.
                     </p>
+
                 </div>
+            </div>
+        </div>
+    </MainSection>
+    <MainSection>
+        <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-6 m-auto">
+            <div>
+                <h1 class="text-4xl font-semibold pb-4">Misión</h1>
+                <p class="text-xl font-semibold leading-snug">Somos una empresa comprometida a ofrecer una gran variedad
+                    de postres y tortas, con la máxima frescura y a precios justos, trabajando en la innovación del
+                    producto y la búsqueda constante de la eficiencia.
+                </p>
+            </div>
+            <div>
+                <h1 class="text-4xl font-semibold pb-4">Visión</h1>
+                <p class="text-xl font-semibold leading-snug">Dentro de un año contar con un local propio, ser una
+                    empresa reconocida por la calidad y originalidad de sus productos.
+                </p>
             </div>
         </div>
     </MainSection>

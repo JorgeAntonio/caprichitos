@@ -15,7 +15,7 @@ onMounted(() => {
 <template>
     <MainSection>
         <div class="flex justify-between">
-            <h1 class="text-4xl font-semibold">Categorias</h1>
+            <h1 class="text-4xl font-semibold">Productos</h1>
             <button class="btn btn-outline btn-neutral btn-sm">ver todo</button>
         </div>
         <div class="divider pb-8"></div>
