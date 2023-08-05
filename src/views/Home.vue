@@ -5,6 +5,7 @@ import Hero from "@/components/Hero.vue";
 import Contactar from "./Contactar.vue";
 import FooterBar from "@/components/layout/FooterBar.vue";
 import PopularItems from "@/components/home/PopularItems.vue";
+import Categories from "./Categories.vue";
 
 </script>
 
@@ -12,6 +13,7 @@ import PopularItems from "@/components/home/PopularItems.vue";
   <div>
     <Hero />
     <About />
+    <Categories />
     <Catalogo />
     <PopularItems />
     <Contactar />
