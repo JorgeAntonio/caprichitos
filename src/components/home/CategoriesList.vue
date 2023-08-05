@@ -17,7 +17,7 @@ onMounted(() => {
             <h1 class="text-4xl font-semibold">Categorias</h1>
         </div>
         <div class="divider pb-8"></div>
-        <div class="flex justify-between items-center">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
             <CategoryCard v-for="(item, index) in category.categories" :key="index" :category="item" />
         </div>
     </MainSection>

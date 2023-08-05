@@ -8,10 +8,10 @@ defineProps<{
 </script>
 
 <template>
-  <div class="card">
-    <figure class="px-8 pt-10">
+  <div class="card hover:shadow-xl">
+    <figure class="">
       <router-link class="link link-hover" :to="`/category/${category.id}`">
-        <img :src="category.image" alt="Card Image" class="object-contain w-full h-64" />
+        <img :src="category.image" alt="Card Image" class="object-contain w-full" />
       </router-link>
     </figure>
     <div class="card-body">
