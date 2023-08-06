@@ -27,7 +27,7 @@ onMounted(() => {
 <template>
     <Navbar />
     <MainSection>
-        <el-alert title="ATENCION!!!" type="error"
+        <el-alert v-if="userSession !== null" title="ATENCION!!!" type="error"
             description="PARA AGREGAR PRODUCTO SIGA LOS SIGUIENTES PASOS EN ESTE ORDEN:   -- 1°.NOMBRE,   --2°.PRECIO,   --3°.DESCRIPCION,   --4°.CATEGORIA,   --5°.GUARDAR PARA SELECCIONAR LA IMAGEN Y SUBIR."
             show-icon :closable="false" />
         <div v-if="showPasswordReset" class="w-full h-full flex flex-col justify-center items-center p-4">
