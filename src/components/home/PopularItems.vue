@@ -18,11 +18,13 @@ onMounted(() => {
             <button class="btn btn-outline btn-neutral btn-sm">ver todo</button>
         </div>
         <div class="divider"></div>
-        <div class="carousel rounded-box">
-            <div class="carousel-item gap-6">
+        <div class="carousel rounded-box ">
+            <div class="carousel-item gap-6 h-[400px]">
                 <div v-for="item in form.productos" :key="item.id" class="flex flex-col justify-center items-center">
-                    <img :src="item.image" class="h-1/2" :alt="item.title" />
-                    <h3 class="text-center text-xl font-semibold mt-2">{{ item.title }}</h3>
+                    <router-link :to="`/product/${item.id}`">
+                        <img :src="item.image" class="h-[250px]" :alt="item.title" />
+                        <h3 class="text-center text-xl font-semibold mt-2">{{ item.title }}</h3>
+                    </router-link>
                 </div>
             </div>
         </div>
