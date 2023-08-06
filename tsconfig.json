@@ -28,9 +28,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     // mios
-    "types": [
-      "element-plus/global"
-    ]
+    // "types": [
+    //   "element-plus/global"
+    // ]
   },
   "include": [
     "src/**/*.ts",
