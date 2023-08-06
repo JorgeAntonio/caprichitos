@@ -8,19 +8,19 @@ defineProps<{
 </script>
 
 <template>
-  <div class="card hover:shadow-xl">
-    <figure class="">
+  <div class="mt-8">
+    <figure>
       <router-link class="link link-hover" :to="`/category/${category.id}`">
-        <img :src="category.image" alt="Card Image" class="object-contain w-full" />
+        <img :src="category.image" alt="Card Image"
+          class="object-contain w-full rounded-xl hover:shadow-md hover:opacity-90" />
       </router-link>
     </figure>
-    <div class="card-body">
+    <div class="my-5">
       <h2 class="text-xl font-semibold text-center">
         <router-link class="link link-hover" :to="`/category/${category.id}`">{{
           category.name
         }}</router-link>
       </h2>
-
     </div>
   </div>
 </template>
