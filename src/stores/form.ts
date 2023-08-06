@@ -7,6 +7,7 @@ export interface Product {
   price: number;
   description: string;
   image: string;
+  category: string;
 }
 
 export interface Category {
@@ -50,10 +51,11 @@ export const almacenForm = defineStore({
       price: 0,
       description: "",
       image: "",
+      category: "",
     },
     categorias: {
       "1": "Tortas",
-      "2": "Personalizado",
+      "2": "Personalizadas",
     },
   }),
   actions: {
@@ -83,7 +85,7 @@ export const almacenForm = defineStore({
       try {
         const { data: elementos, error } = await supabase
           .from("elementos")
-          .select("id, title, description, price, image")
+          .select("id, title, description, price, image, category")
           .eq("id", id)
           .single();
         if (error) {
@@ -140,6 +142,7 @@ export const almacenForm = defineStore({
           price: this.producto.price,
           description: this.producto.description,
           image: this.urlDescarga,
+          category: this.producto.category,
         };
         const { data, error } = await supabase
           .from("elementos")
@@ -189,6 +192,7 @@ export const almacenForm = defineStore({
           price: this.producto.price,
           description: this.producto.description,
           image: this.urlDescarga,
+          category: this.producto.category,
         };
         const { error } = await supabase.from("elementos").upsert(datos, {
           onConflict: "minimal", // Don't return the value after inserting

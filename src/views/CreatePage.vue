@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed, onMounted } from "vue";
-import BaseInput from "../components/formulario/BaseInput.vue";
 import { almacenForm } from "../stores/form";
 
 // componentes
@@ -28,6 +27,9 @@ onMounted(() => {
 <template>
     <Navbar />
     <MainSection>
+        <el-alert title="ATENCION!!!" type="error"
+            description="PARA AGREGAR PRODUCTO SIGA LOS SIGUIENTES PASOS EN ESTE ORDEN:   -- 1°.NOMBRE,   --2°.PRECIO,   --3°.DESCRIPCION,   --4°.CATEGORIA,   --5°.GUARDAR PARA SELECCIONAR LA IMAGEN Y SUBIR."
+            show-icon :closable="false" />
         <div v-if="showPasswordReset" class="w-full h-full flex flex-col justify-center items-center p-4">
             <PasswordReset />
         </div>
@@ -35,8 +37,8 @@ onMounted(() => {
             <Auth />
         </div>
         <div v-else
-            class="w-full h-full flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start p-4">
-            <form>
+            class="w-full h-full flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start p-4 gap-6">
+            <el-form label-position="top" size="large">
                 <div>
                     <img v-if="form.src" :src="form.src" class="avatar rounded mb-2"
                         :style="{ height: form.size, width: form.size }" />
@@ -57,11 +59,24 @@ onMounted(() => {
                         </label>
                     </div>
                 </div>
-                <BaseInput v-model="form.producto.title" type="text" label="Producto" />
-                <BaseInput v-model="form.producto.price" type="text" label="Precio" />
-                <BaseInput v-model="form.producto.description" type="text" label="Descripción" />
+                <el-form-item label="Precio" prop="price" class="mt-4">
+                    <el-input v-model="form.producto.title" placeholder="Cake" />
+                </el-form-item>
+                <el-form-item label="Precio" prop="price">
+                    <el-input v-model="form.producto.price" placeholder="5.70" />
+                </el-form-item>
+                <el-form-item label="Descripción" prop="description">
+                    <el-input v-model="form.producto.description" autosize type="textarea"
+                        placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ex consequuntur sed amet nemo obcaecati earum doloribus adipisci non reprehenderit." />
+                </el-form-item>
+                <el-form-item label="Categoría" prop="category">
+                    <el-select v-model="form.producto.category" placeholder="Categoria">
+                        <el-option label="Tortas" value="1" />
+                        <el-option label="Personalizadas" value="2" />
+                    </el-select>
+                </el-form-item>
 
-            </form>
+            </el-form>
             <table class="table">
                 <thead>
                     <tr>
