@@ -1,42 +1,19 @@
 <script setup lang="ts">
-import { toCurrency } from '../shared/utils';
-import { almacenForm } from '../stores/form'
-import { useRoute } from 'vue-router';
-import FooterBar from '../components/layout/FooterBar.vue'
+import Breadcrumbs from '@/components/layout/Breadcrumbs.vue';
+import FooterBar from '@/components/layout/FooterBar.vue';
 import Navbar from '@/components/layout/Navbar.vue';
-import MainSection from '@/components/layout/MainSection.vue';
+import ProductDetail from '@/components/products/ProductDetail.vue';
 
-
-const route = useRoute();
-
-const form = almacenForm();
-
-form.obtenerDatoId(
-    route.params.id as string
-);
-
+const items = [
+    { text: "Inicio", to: "/" },
+    { text: "Productos", to: "/products" },
+    { text: "Detalle", disabled: true }
+];
 </script>
 
 <template>
     <Navbar />
-    <MainSection>
-        <div class="card">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center">
-                <div class="p-7">
-                    <img :src="form.producto.image" alt="product image" class="mx-auto my-7">
-                </div>
-                <div class="p-7">
-                    <h2 class="text-4xl my-7">{{ form.producto.title }}</h2>
-                    <h3 class="font-bold border-b-2 mb-4 pb-2">Precio</h3>
-                    <p class="text-xl my-7">Price <span>S/. {{ toCurrency(form.producto.price) }}</span></p>
-                    <h3 class="font-bold border-b-2 mb-4 pb-2">Descripción</h3>
-                    <p class="mb-7">{{ form.producto.description }}</p>
-                    <button class="btn btn-primary">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-        </div>
-    </MainSection>
+    <Breadcrumbs :items="items" />
+    <ProductDetail />
     <FooterBar />
 </template>

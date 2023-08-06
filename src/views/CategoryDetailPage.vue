@@ -6,6 +6,7 @@ import MainSection from "../components/layout/MainSection.vue";
 import { useRoute } from "vue-router";
 import Navbar from "@/components/layout/Navbar.vue";
 import FooterBar from "@/components/layout/FooterBar.vue";
+import Breadcrumbs from "@/components/layout/Breadcrumbs.vue";
 
 const route = useRoute();
 
@@ -14,10 +15,17 @@ const id = route.params.id as string;
 
 form.obtenerDatosPorCategoria(id);
 
+const items = [
+    { text: "Inicio", to: "/" },
+    { text: "Categorias", to: "/category" },
+    { text: form.categorias[id], disabled: true },
+];
+
 </script>
 
 <template>
     <Navbar />
+    <Breadcrumbs :items="items" />
     <MainSection>
         <div class="flex justify-between">
             <h1 class="text-4xl font-semibold">{{ form.categorias[id] }}</h1>

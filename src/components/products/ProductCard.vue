@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Product } from "../../stores/products";
 import { toCurrency } from "../../shared/utils";
+import { CirclePlusFilled } from '@element-plus/icons-vue'
 
 
 defineProps<{
@@ -23,8 +24,10 @@ defineProps<{
       </h2>
       <div class="flex justify-center items-center">
         <p class="text-lg">{{ toCurrency(product.price) }}</p>
-        <router-link class="btn btn-primary btn-sm" :to="`/product/${product.id}`">
-          order
+        <router-link :to="`/product/${product.id}`">
+          <el-icon size="30">
+            <CirclePlusFilled />
+          </el-icon>
         </router-link>
       </div>
     </div>

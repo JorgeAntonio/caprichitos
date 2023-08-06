@@ -4,8 +4,8 @@ import Hero from "@/components/home/Hero.vue";
 import Contactar from "./ContactPage.vue";
 import FooterBar from "@/components/layout/FooterBar.vue";
 import PopularItems from "@/components/home/PopularItems.vue";
-import Categories from "./CategoryPage.vue";
-import Products from "@/components/products/Products.vue";
+import ProductsList from "@/components/products/ProductsList.vue";
+import CategoriesList from "@/components/home/CategoriesList.vue";
 
 </script>
 
@@ -13,8 +13,8 @@ import Products from "@/components/products/Products.vue";
   <div>
     <Hero />
     <About />
-    <Categories />
-    <Products />
+    <CategoriesList />
+    <ProductsList />
     <PopularItems />
     <Contactar />
     <FooterBar />

@@ -1,15 +1,35 @@
 import { supabase } from "@/lib/supabase";
+import type { Provider } from "@supabase/gotrue-js/dist/main/lib/types";
 import { defineStore } from "pinia";
 
 interface Credentials {
   email: string | "";
   password: string | "";
+  provider?: "bitbucket" | "github" | "gitlab" | "google" | undefined;
 }
 
 export const almacenAuth = defineStore({
   id: "user",
   state: () => ({}),
   actions: {
+    async handleOAuthLogin(provider: Provider) {
+      try {
+        const { error } = await supabase.auth.signInWithOAuth({
+          provider,
+          options: {
+            queryParams: {
+              access_type: "offline",
+              prompt: "consent",
+            },
+          },
+        });
+        if (error) {
+          alert("Error al iniciar sesión " + error.message);
+        }
+      } catch (error: any) {
+        console.error("Error detectado ", error.message);
+      }
+    },
     async login(credentials: Credentials) {
       try {
         const { data, error } = await supabase.auth.signInWithPassword({

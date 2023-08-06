@@ -15,15 +15,18 @@ const user = almacenAuth();
         </label>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
           <li><router-link to="/products">Productos</router-link></li>
+          <li><router-link to="/category">Categorias</router-link></li>
           <li><router-link to="/">Nosotros</router-link></li>
           <li><router-link to="/">App</router-link></li>
         </ul>
       </div>
-      <router-link to="/" class="text-2xl font-semibold">Dulce Capricho</router-link>
+      <router-link to="/" class="text-base md:text-2xl font-semibold">Dulce Capricho</router-link>
     </div>
     <div class="navbar-end gap-2">
       <ul class="hidden md:flex gap-3">
         <li><router-link to="/products" class="hover:underline rounded-md font-semibold px-1">Productos</router-link></li>
+        <li><router-link to="/category" class="hover:underline rounded-md font-semibold px-1">Categorias</router-link>
+        </li>
         <li><router-link to="/" class="hover:underline rounded-md font-semibold px-1">Nosotros</router-link></li>
         <li><router-link to="/" class="hover:underline rounded-md font-semibold px-1">App</router-link></li>
       </ul>

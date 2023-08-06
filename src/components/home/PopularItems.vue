@@ -15,7 +15,7 @@ onMounted(() => {
     <MainSection>
         <div class="flex justify-between">
             <h1 class="text-4xl font-semibold">Populares</h1>
-            <button class="btn btn-outline btn-neutral btn-sm">ver todo</button>
+            <router-link to="/products" class="btn btn-outline btn-neutral btn-sm">ver todo</router-link>
         </div>
         <div class="divider"></div>
         <div class="carousel rounded-box ">

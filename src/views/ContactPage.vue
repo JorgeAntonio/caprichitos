@@ -4,7 +4,7 @@ import MainSection from "../components/layout/MainSection.vue";
 
 <template>
     <MainSection>
-        <div class="card border py-16 bg-secondary">
+        <div id="contactar" class="card border py-16 bg-secondary">
             <div class="card-body grid grid-cols-1 md:grid-cols-2 items-center">
                 <div class="hidden md:flex justify-center items-center">
                     <img src="../assets/wall3-removebg.png" class="" alt="">
