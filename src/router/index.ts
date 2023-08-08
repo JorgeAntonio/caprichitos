@@ -51,7 +51,7 @@ const router = createRouter({
     {
       path: "/contactar",
       name: "Contact",
-      component: () => import("../views/HomePage.vue"),
+      component: () => import("../views/ContactPage.vue"),
     },
     {
       path: "/cesta",

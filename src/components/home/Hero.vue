@@ -17,7 +17,7 @@ import Navbar from '../layout/Navbar.vue';
                         </p>
                         <div class="flex gap-2">
                             <router-link to="/products" class="btn btn-neutral w-1/2">Ordenar</router-link>
-                            <router-link to="/products" class="btn btn-neutral w-1/2">Contactar</router-link>
+                            <router-link to="/contactar" class="btn btn-neutral w-1/2">Contactar</router-link>
                         </div>
                     </div>
                 </div>

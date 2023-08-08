@@ -20,7 +20,7 @@ const formattedCart = computed(() => cart.formattedCart);
 
 <template>
     <Navbar />
-    <div class="p-4 max-w-4xl mx-auto">
+    <div class="p-4 max-w-4xl mx-auto min-h-screen">
         <div v-if="!deProductos.loaded" class="space-y-4">
             <CartCardSkeleton v-for="n in 15" :key="n" />
         </div>

@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import AboutCard from "@/components/about/AboutCard.vue";
 import Hero from "@/components/home/Hero.vue";
-import Contactar from "./ContactPage.vue";
 import FooterBar from "@/components/layout/FooterBar.vue";
 import PopularItems from "@/components/home/PopularItems.vue";
 import ProductsList from "@/components/products/ProductsList.vue";
 import CategoriesList from "@/components/home/CategoriesList.vue";
+import ContactSection from "@/components/contact/ContactSection.vue";
 
 </script>
 
@@ -16,7 +16,7 @@ import CategoriesList from "@/components/home/CategoriesList.vue";
     <CategoriesList />
     <ProductsList />
     <PopularItems />
-    <Contactar />
+    <ContactSection />
     <FooterBar />
   </div>
 </template>

@@ -33,7 +33,7 @@ const items = [
         </div>
         <div class="divider pb-8"></div>
         <div class="flex justify-between">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  min-h-screen">
                 <ProductCard v-for="(item, index) in form.productos" :key="index" :product="item" />
             </div>
         </div>
