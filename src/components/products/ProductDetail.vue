@@ -43,7 +43,7 @@ form.obtenerDatoId(
                 <button class="btn btn-primary" @click="cartStore.add(form.producto.id)">
                     <el-icon size="30">
                         <ShoppingCart />
-                    </el-icon> Agregar al carrito
+                    </el-icon> Agregar a la cesta
                 </button>
             </div>
         </div>
