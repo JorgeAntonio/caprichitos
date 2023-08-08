@@ -1,14 +1,25 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import { toCurrency } from '../../shared/utils';
 import { almacenForm } from '../../stores/form'
 import { useRoute } from 'vue-router';
 import { ShoppingCart } from '@element-plus/icons-vue'
 import MainSection from '@/components/layout/MainSection.vue';
-
+import { almacenCart } from '@/stores/cart';
+import { almacenProductos } from '@/stores/products';
 
 const route = useRoute();
 
+const cartStore = almacenCart();
+const productsStore = almacenProductos();
 const form = almacenForm();
+
+const product = computed(() => {
+    const producto = productsStore.obtenerProductos();
+    return producto;
+});
+
+product.value;
 
 form.obtenerDatoId(
     route.params.id as string
@@ -29,7 +40,7 @@ form.obtenerDatoId(
                 <h3 class="font-bold border-b-2 mb-4 pb-2">Descripción</h3>
                 <p class="mb-7">{{ form.producto.description }}</p>
 
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" @click="cartStore.add(form.producto.id)">
                     <el-icon size="30">
                         <ShoppingCart />
                     </el-icon> Agregar al carrito

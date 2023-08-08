@@ -12,6 +12,7 @@ declare module 'vue' {
     BaseInput: typeof import('./src/components/formulario/BaseInput.vue')['default']
     BaseInputDate: typeof import('./src/components/formulario/BaseInputDate.vue')['default']
     Breadcrumbs: typeof import('./src/components/layout/Breadcrumbs.vue')['default']
+    CartCard: typeof import('./src/components/CartCard.vue')['default']
     CartCardSkeleton: typeof import('./src/components/products/CartCardSkeleton.vue')['default']
     CategoriesList: typeof import('./src/components/home/CategoriesList.vue')['default']
     CategoryCard: typeof import('./src/components/category/CategoryCard.vue')['default']

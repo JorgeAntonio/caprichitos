@@ -39,6 +39,7 @@ const user = almacenAuth();
             sorpresas</router-link></li>
         <li><router-link to="/flyers" class="hover:underline rounded-md font-semibold">Flyers</router-link></li>
         <li><router-link to="/nosotros" class="hover:underline rounded-md font-semibold">Nosotros</router-link></li>
+        <li><router-link to="/cesta" class="hover:underline rounded-md font-semibold">Cesta</router-link></li>
         <li><router-link to="/" class="hover:underline rounded-md font-semibold">App</router-link></li>
         <li><router-link to="/contactar" v-if="userSession == null"
             class="hover:underline rounded-md font-semibold">Contactar</router-link>
