@@ -25,7 +25,7 @@ const user = almacenAuth();
           <li><router-link to="/">App</router-link></li>
         </ul>
       </div>
-      <router-link to="/" class="text-base md:text-2xl font-semibold">Dulce Capricho</router-link>
+      <router-link to="/" class="text-base md:text-2xl font-semibold uppercase">Dulce Capricho</router-link>
     </div>
     <div class="navbar-center">
       <ul class="hidden md:flex items-center gap-4">
