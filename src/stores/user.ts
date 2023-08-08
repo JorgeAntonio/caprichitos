@@ -33,8 +33,8 @@ export const almacenAuth = defineStore({
     async login(credentials: Credentials) {
       try {
         const { data, error } = await supabase.auth.signInWithPassword({
-          email: credentials.email,
-          password: credentials.password,
+          email: credentials.email.trim(),
+          password: credentials.password.trim(),
         });
 
         if (error) {
