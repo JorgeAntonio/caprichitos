@@ -29,19 +29,34 @@ const router = createRouter({
       component: () => import("../views/CategoryDetailPage.vue"),
     },
     {
+      path: "/sorpresas",
+      name: "Surprise",
+      component: () => import("../views/SurprisePage.vue"),
+    },
+    {
+      path: "/sorpresas/:id",
+      name: "SurpriseDetail",
+      component: () => import("../views/SurpriseDetailPage.vue"),
+    },
+    {
+      path: "/flyers",
+      name: "Flyer",
+      component: () => import("../views/FlyerPage.vue"),
+    },
+    {
+      path: "/nosotros",
+      name: "About",
+      component: () => import("../views/AboutPage.vue"),
+    },
+    {
+      path: "/contactar",
+      name: "Contact",
+      component: () => import("../views/HomePage.vue"),
+    },
+    {
       path: "/create",
       name: "Create",
       component: () => import("../views/CreatePage.vue"),
-    },
-    {
-      path: "/about",
-      name: "About",
-      component: () => import("../views/HomePage.vue"),
-    },
-    {
-      path: "/contact",
-      name: "Contact",
-      component: () => import("../views/HomePage.vue"),
     },
   ],
 });

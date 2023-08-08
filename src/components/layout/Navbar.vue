@@ -14,24 +14,52 @@ const user = almacenAuth();
           </svg>
         </label>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><router-link to="/">Inicio</router-link></li>
           <li><router-link to="/products">Productos</router-link></li>
           <li><router-link to="/category">Categorias</router-link></li>
-          <li><router-link to="/">Nosotros</router-link></li>
+          <li><router-link to="/category/2">Tortas personalizadas</router-link></li>
+          <li><router-link to="/sorpresas">Regalos sorpresas</router-link></li>
+          <li><router-link to="/flyers">Flyers</router-link></li>
+          <li><router-link to="/nosotros">Nosotros</router-link></li>
+          <li><router-link to="/contactar">Contactar</router-link></li>
           <li><router-link to="/">App</router-link></li>
         </ul>
       </div>
       <router-link to="/" class="text-base md:text-2xl font-semibold">Dulce Capricho</router-link>
     </div>
-    <div class="navbar-end gap-2">
-      <ul class="hidden md:flex gap-3">
-        <li><router-link to="/products" class="hover:underline rounded-md font-semibold px-1">Productos</router-link></li>
-        <li><router-link to="/category" class="hover:underline rounded-md font-semibold px-1">Categorias</router-link>
+    <div class="navbar-center">
+      <ul class="hidden md:flex items-center gap-4">
+        <li><router-link to="/" class="hover:underline rounded-md font-semibold">Inicio</router-link></li>
+        <li><router-link to="/products" class="hover:underline rounded-md font-semibold">Productos</router-link></li>
+        <li><router-link to="/category" class="hover:underline rounded-md font-semibold">Categorias</router-link>
         </li>
-        <li><router-link to="/" class="hover:underline rounded-md font-semibold px-1">Nosotros</router-link></li>
-        <li><router-link to="/" class="hover:underline rounded-md font-semibold px-1">App</router-link></li>
+        <li><router-link to="/category/2" class="hover:underline rounded-md font-semibold">Tortas
+            personalizadas</router-link></li>
+        <li><router-link to="/sorpresas" class="hover:underline inline-block rounded-md font-semibold">Regalos
+            sorpresas</router-link></li>
+        <li><router-link to="/flyers" class="hover:underline rounded-md font-semibold">Flyers</router-link></li>
+        <li><router-link to="/nosotros" class="hover:underline rounded-md font-semibold">Nosotros</router-link></li>
+        <li><router-link to="/" class="hover:underline rounded-md font-semibold">App</router-link></li>
+        <li><router-link to="/contactar" v-if="userSession == null"
+            class="hover:underline rounded-md font-semibold">Contactar</router-link>
+        </li>
+        <div v-if="userSession" class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+            <div class="w-10 rounded-full">
+              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="">
+            </div>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li>
+              <router-link to="/create" v-if="userSession" class="justify-between">
+                Dashboard
+                <span class="badge">New</span>
+              </router-link>
+            </li>
+            <li><a v-if="userSession" @click="user.logout">Logout</a></li>
+          </ul>
+        </div>
       </ul>
-      <router-link to="/create" v-if="userSession" class="hidden md:btn md:btn-neutral md:btn-sm">Dashboard</router-link>
-      <button v-if="userSession" @click="user.logout" class="hidden md:btn md:btn-neutral md:btn-sm">Salir</button>
     </div>
   </div>
 </template>

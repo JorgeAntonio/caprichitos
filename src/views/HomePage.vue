@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import About from "./AboutPage.vue";
+import AboutCard from "@/components/about/AboutCard.vue";
 import Hero from "@/components/home/Hero.vue";
 import Contactar from "./ContactPage.vue";
 import FooterBar from "@/components/layout/FooterBar.vue";
@@ -12,7 +12,7 @@ import CategoriesList from "@/components/home/CategoriesList.vue";
 <template>
   <div>
     <Hero />
-    <About />
+    <AboutCard />
     <CategoriesList />
     <ProductsList />
     <PopularItems />

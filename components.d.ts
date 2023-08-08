@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AboutCard: typeof import('./src/components/about/AboutCard.vue')['default']
     Auth: typeof import('./src/components/auth/Auth.vue')['default']
     BaseInput: typeof import('./src/components/formulario/BaseInput.vue')['default']
     BaseInputDate: typeof import('./src/components/formulario/BaseInputDate.vue')['default']
@@ -14,6 +15,8 @@ declare module 'vue' {
     CartCardSkeleton: typeof import('./src/components/products/CartCardSkeleton.vue')['default']
     CategoriesList: typeof import('./src/components/home/CategoriesList.vue')['default']
     CategoryCard: typeof import('./src/components/category/CategoryCard.vue')['default']
+    ContactCard: typeof import('./src/components/contact/ContactCard.vue')['default']
+    ContactForm: typeof import('./src/components/contact/ContactForm.vue')['default']
     Create: typeof import('./src/components/products/Create.vue')['default']
     ElAlert: typeof import('element-plus/es')['ElAlert']
     ElBreadcrumb: typeof import('element-plus/es')['ElBreadcrumb']
@@ -37,6 +40,7 @@ declare module 'vue' {
     ElSwitch: typeof import('element-plus/es')['ElSwitch']
     ElTimePicker: typeof import('element-plus/es')['ElTimePicker']
     ElUpload: typeof import('element-plus/es')['ElUpload']
+    FlyerList: typeof import('./src/components/flyer/FlyerList.vue')['default']
     FooterBar: typeof import('./src/components/layout/FooterBar.vue')['default']
     Hero: typeof import('./src/components/home/Hero.vue')['default']
     MainSection: typeof import('./src/components/layout/MainSection.vue')['default']
@@ -51,5 +55,6 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Sidebar: typeof import('./src/components/layout/Sidebar.vue')['default']
+    SurpriseList: typeof import('./src/components/surprise/SurpriseList.vue')['default']
   }
 }

@@ -15,7 +15,10 @@ import Navbar from '../layout/Navbar.vue';
                         </h2>
                         <p class="text-base md:text-xl font-semibold max-w-sm">¡Dulzura que deleita, momentos que perduran!
                         </p>
-                        <router-link to="/products" class="btn btn-neutral w-1/2">Ordenar</router-link>
+                        <div class="flex gap-2">
+                            <router-link to="/products" class="btn btn-neutral w-1/2">Ordenar</router-link>
+                            <router-link to="/products" class="btn btn-neutral w-1/2">Contactar</router-link>
+                        </div>
                     </div>
                 </div>
                 <div class="flex justify-center items-center card">
